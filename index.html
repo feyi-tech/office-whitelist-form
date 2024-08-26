@@ -1,0 +1,438 @@
+<html lang="en"><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/site.css?v=qKZAZE8kam-WzdBVOJ0VlFuo_wnSq7w3lh-w6xuZh68">
+    <title data-i18n="default.title">New support request</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3 position-fixed w-100">
+            <div class="container nav-container" style="display: none !important;">
+                <a class="navbar-brand" href="/?page=%2FIndex">
+                    <img src="/img/microsoft.png">
+                </a>
+                <span>|</span>
+                <span data-i18n="nav.support">Support</span>
+                
+    <div class="loginSection">
+        Elijah Adegoke - <a href="Logout" class="link-dark">Logout</a>
+    </div>
+
+            </div>
+        </nav>
+    </header>
+    <div class="container body-container">
+        <main role="main" class="pb-3">
+            
+
+<div class="text-center">
+    <div class="d-none d-flex justify-content-center progress-indicator">
+        <div class="spinner-border" role="status">
+            <span class="sr-only"></span>
+        </div>
+    </div>
+    <div class="main-container form">
+        <form method="post" class="needs-validation" novalidate="">
+            
+            <h1 data-i18n="form.title">New support request</h1>
+            <h5 data-i18n="form.header.issue">Describe the issue</h5>
+            <hr>
+            <label data-i18n="form.fieldLabel.title">Issue Title</label>
+            <span data-i18n="form.requiredFieldSymbol">*</span>
+            <br>
+            <input type="text" class="form-control input-sm" maxlength="200" required="" data-val="true" data-val-length="The field IssueTitle must be a string with a maximum length of 200." data-val-length-max="200" data-val-required="The IssueTitle field is required." id="IssueTitle" name="IssueTitle" value="">
+            <span class="invalid-feedback field-validation-valid" data-valmsg-for="IssueTitle" data-valmsg-replace="false">Please fill out this field.</span>
+            <h6 data-i18n="form.header.sender">Sender Information for Outlook.com Delivery</h6>
+            <hr>
+            <label data-i18n="form.fieldLabel.contactName">Contact Name</label>
+            <span data-i18n="form.requiredFieldSymbol">*</span>
+            <br>
+            <input type="text" class="form-control input-sm" maxlength="200" required="" data-val="true" data-val-length="The field ContactName must be a string with a maximum length of 200." data-val-length-max="200" data-val-required="The ContactName field is required." id="ContactName" name="ContactName" value="Elijah Adegoke">
+            <span class="invalid-feedback field-validation-valid" data-valmsg-for="ContactName" data-valmsg-replace="false">Please fill out this field.</span>
+            <br>
+            <label data-i18n="form.fieldLabel.domainTo">What domain are you sending to?</label>
+            <span data-i18n="form.requiredFieldSymbol">*</span>
+            <br>
+            <select class="form-control input-sm" required="" data-val="true" data-val-required="The DomainTo field is required." id="DomainTo" name="DomainTo">
+                <option selected="selected"></option>
+                <option data-i18n="form.domainTo.hotmail" value="hotmail.com">hotmail.com</option>
+                <option data-i18n="form.domainTo.live" value="live.com">live.com</option>
+                <option data-i18n="form.domainTo.msn" value="msn.com">msn.com</option>
+                <option data-i18n="form.domainTo.outlook" value="outlook.com">outlook.com</option>
+                <option data-i18n="form.domainTo.other" value="other">other</option>
+            </select>
+            <span class="invalid-feedback field-validation-valid" data-valmsg-for="DomainTo" data-valmsg-replace="false">Please fill out this field.</span>
+            <br>
+            <label data-i18n="form.fieldLabel.contactEmail">Contact e-mail address (this email must be valid to receive the investigation report)</label>
+            <span data-i18n="form.requiredFieldSymbol">*</span>
+            <br>
+            <input type="text" class="form-control input-sm" maxlength="200" readonly="" required="" data-val="true" data-val-email="The ContactEmail field is not a valid e-mail address." data-val-length="The field ContactEmail must be a string with a maximum length of 200." data-val-length-max="200" data-val-required="The ContactEmail field is required." id="ContactEmail" name="ContactEmail" value="jinminetics@gmail.com">
+            <span class="text-danger">
+                <span class="field-validation-valid" data-valmsg-for="ContactEmail" data-valmsg-replace="true"></span>
+            </span>
+            <br>
+            <label data-i18n="form.fieldLabel.timezone">Timezone</label>
+            <span data-i18n="form.requiredFieldSymbol">*</span>
+            <br>
+            <select id="ddlTimezones" class="form-control input-sm" required="" data-val="true" data-val-required="The Timezone field is required." name="Timezone">
+                <option selected="selected"></option>
+            <option value="Dateline Standard Time">(UTC-12:00) International Date Line West</option>
+<option value="UTC-11">(UTC-11:00) Coordinated Universal Time-11</option>
+<option value="Aleutian Standard Time">(UTC-10:00) Aleutian Islands</option>
+<option value="Hawaiian Standard Time">(UTC-10:00) Hawaii</option>
+<option value="Marquesas Standard Time">(UTC-09:30) Marquesas Islands</option>
+<option value="Alaskan Standard Time">(UTC-09:00) Alaska</option>
+<option value="UTC-09">(UTC-09:00) Coordinated Universal Time-09</option>
+<option value="Pacific Standard Time (Mexico)">(UTC-08:00) Baja California</option>
+<option value="UTC-08">(UTC-08:00) Coordinated Universal Time-08</option>
+<option value="Pacific Standard Time">(UTC-08:00) Pacific Time (US &amp; Canada)</option>
+<option value="US Mountain Standard Time">(UTC-07:00) Arizona</option>
+<option value="Mountain Standard Time (Mexico)">(UTC-07:00) La Paz, Mazatlan</option>
+<option value="Mountain Standard Time">(UTC-07:00) Mountain Time (US &amp; Canada)</option>
+<option value="Yukon Standard Time">(UTC-07:00) Yukon</option>
+<option value="Central America Standard Time">(UTC-06:00) Central America</option>
+<option value="Central Standard Time">(UTC-06:00) Central Time (US &amp; Canada)</option>
+<option value="Easter Island Standard Time">(UTC-06:00) Easter Island</option>
+<option value="Central Standard Time (Mexico)">(UTC-06:00) Guadalajara, Mexico City, Monterrey</option>
+<option value="Canada Central Standard Time">(UTC-06:00) Saskatchewan</option>
+<option value="SA Pacific Standard Time">(UTC-05:00) Bogota, Lima, Quito, Rio Branco</option>
+<option value="Eastern Standard Time (Mexico)">(UTC-05:00) Chetumal</option>
+<option value="Eastern Standard Time">(UTC-05:00) Eastern Time (US &amp; Canada)</option>
+<option value="Haiti Standard Time">(UTC-05:00) Haiti</option>
+<option value="Cuba Standard Time">(UTC-05:00) Havana</option>
+<option value="US Eastern Standard Time">(UTC-05:00) Indiana (East)</option>
+<option value="Turks And Caicos Standard Time">(UTC-05:00) Turks and Caicos</option>
+<option value="Paraguay Standard Time">(UTC-04:00) Asuncion</option>
+<option value="Atlantic Standard Time">(UTC-04:00) Atlantic Time (Canada)</option>
+<option value="Venezuela Standard Time">(UTC-04:00) Caracas</option>
+<option value="Central Brazilian Standard Time">(UTC-04:00) Cuiaba</option>
+<option value="SA Western Standard Time">(UTC-04:00) Georgetown, La Paz, Manaus, San Juan</option>
+<option value="Pacific SA Standard Time">(UTC-04:00) Santiago</option>
+<option value="Newfoundland Standard Time">(UTC-03:30) Newfoundland</option>
+<option value="Tocantins Standard Time">(UTC-03:00) Araguaina</option>
+<option value="E. South America Standard Time">(UTC-03:00) Brasilia</option>
+<option value="SA Eastern Standard Time">(UTC-03:00) Cayenne, Fortaleza</option>
+<option value="Argentina Standard Time">(UTC-03:00) City of Buenos Aires</option>
+<option value="Montevideo Standard Time">(UTC-03:00) Montevideo</option>
+<option value="Magallanes Standard Time">(UTC-03:00) Punta Arenas</option>
+<option value="Saint Pierre Standard Time">(UTC-03:00) Saint Pierre and Miquelon</option>
+<option value="Bahia Standard Time">(UTC-03:00) Salvador</option>
+<option value="UTC-02">(UTC-02:00) Coordinated Universal Time-02</option>
+<option value="Greenland Standard Time">(UTC-02:00) Greenland</option>
+<option value="Mid-Atlantic Standard Time">(UTC-02:00) Mid-Atlantic - Old</option>
+<option value="Azores Standard Time">(UTC-01:00) Azores</option>
+<option value="Cape Verde Standard Time">(UTC-01:00) Cabo Verde Is.</option>
+<option value="UTC">(UTC) Coordinated Universal Time</option>
+<option value="GMT Standard Time">(UTC+00:00) Dublin, Edinburgh, Lisbon, London</option>
+<option value="Greenwich Standard Time">(UTC+00:00) Monrovia, Reykjavik</option>
+<option value="Sao Tome Standard Time">(UTC+00:00) Sao Tome</option>
+<option value="Morocco Standard Time">(UTC+01:00) Casablanca</option>
+<option value="W. Europe Standard Time">(UTC+01:00) Amsterdam, Berlin, Bern, Rome, Stockholm, Vienna</option>
+<option value="Central Europe Standard Time">(UTC+01:00) Belgrade, Bratislava, Budapest, Ljubljana, Prague</option>
+<option value="Romance Standard Time">(UTC+01:00) Brussels, Copenhagen, Madrid, Paris</option>
+<option value="Central European Standard Time">(UTC+01:00) Sarajevo, Skopje, Warsaw, Zagreb</option>
+<option value="W. Central Africa Standard Time">(UTC+01:00) West Central Africa</option>
+<option value="GTB Standard Time">(UTC+02:00) Athens, Bucharest</option>
+<option value="Middle East Standard Time">(UTC+02:00) Beirut</option>
+<option value="Egypt Standard Time">(UTC+02:00) Cairo</option>
+<option value="E. Europe Standard Time">(UTC+02:00) Chisinau</option>
+<option value="West Bank Standard Time">(UTC+02:00) Gaza, Hebron</option>
+<option value="South Africa Standard Time">(UTC+02:00) Harare, Pretoria</option>
+<option value="FLE Standard Time">(UTC+02:00) Helsinki, Kyiv, Riga, Sofia, Tallinn, Vilnius</option>
+<option value="Israel Standard Time">(UTC+02:00) Jerusalem</option>
+<option value="South Sudan Standard Time">(UTC+02:00) Juba</option>
+<option value="Kaliningrad Standard Time">(UTC+02:00) Kaliningrad</option>
+<option value="Sudan Standard Time">(UTC+02:00) Khartoum</option>
+<option value="Libya Standard Time">(UTC+02:00) Tripoli</option>
+<option value="Namibia Standard Time">(UTC+02:00) Windhoek</option>
+<option value="Jordan Standard Time">(UTC+03:00) Amman</option>
+<option value="Arabic Standard Time">(UTC+03:00) Baghdad</option>
+<option value="Syria Standard Time">(UTC+03:00) Damascus</option>
+<option value="Turkey Standard Time">(UTC+03:00) Istanbul</option>
+<option value="Arab Standard Time">(UTC+03:00) Kuwait, Riyadh</option>
+<option value="Belarus Standard Time">(UTC+03:00) Minsk</option>
+<option value="Russian Standard Time">(UTC+03:00) Moscow, St. Petersburg</option>
+<option value="E. Africa Standard Time">(UTC+03:00) Nairobi</option>
+<option value="Volgograd Standard Time">(UTC+03:00) Volgograd</option>
+<option value="Iran Standard Time">(UTC+03:30) Tehran</option>
+<option value="Arabian Standard Time">(UTC+04:00) Abu Dhabi, Muscat</option>
+<option value="Astrakhan Standard Time">(UTC+04:00) Astrakhan, Ulyanovsk</option>
+<option value="Azerbaijan Standard Time">(UTC+04:00) Baku</option>
+<option value="Russia Time Zone 3">(UTC+04:00) Izhevsk, Samara</option>
+<option value="Mauritius Standard Time">(UTC+04:00) Port Louis</option>
+<option value="Saratov Standard Time">(UTC+04:00) Saratov</option>
+<option value="Georgian Standard Time">(UTC+04:00) Tbilisi</option>
+<option value="Caucasus Standard Time">(UTC+04:00) Yerevan</option>
+<option value="Afghanistan Standard Time">(UTC+04:30) Kabul</option>
+<option value="West Asia Standard Time">(UTC+05:00) Ashgabat, Tashkent</option>
+<option value="Qyzylorda Standard Time">(UTC+05:00) Astana</option>
+<option value="Ekaterinburg Standard Time">(UTC+05:00) Ekaterinburg</option>
+<option value="Pakistan Standard Time">(UTC+05:00) Islamabad, Karachi</option>
+<option value="India Standard Time">(UTC+05:30) Chennai, Kolkata, Mumbai, New Delhi</option>
+<option value="Sri Lanka Standard Time">(UTC+05:30) Sri Jayawardenepura</option>
+<option value="Nepal Standard Time">(UTC+05:45) Kathmandu</option>
+<option value="Central Asia Standard Time">(UTC+06:00) Bishkek</option>
+<option value="Bangladesh Standard Time">(UTC+06:00) Dhaka</option>
+<option value="Omsk Standard Time">(UTC+06:00) Omsk</option>
+<option value="Myanmar Standard Time">(UTC+06:30) Yangon (Rangoon)</option>
+<option value="SE Asia Standard Time">(UTC+07:00) Bangkok, Hanoi, Jakarta</option>
+<option value="Altai Standard Time">(UTC+07:00) Barnaul, Gorno-Altaysk</option>
+<option value="W. Mongolia Standard Time">(UTC+07:00) Hovd</option>
+<option value="North Asia Standard Time">(UTC+07:00) Krasnoyarsk</option>
+<option value="N. Central Asia Standard Time">(UTC+07:00) Novosibirsk</option>
+<option value="Tomsk Standard Time">(UTC+07:00) Tomsk</option>
+<option value="China Standard Time">(UTC+08:00) Beijing, Chongqing, Hong Kong, Urumqi</option>
+<option value="North Asia East Standard Time">(UTC+08:00) Irkutsk</option>
+<option value="Singapore Standard Time">(UTC+08:00) Kuala Lumpur, Singapore</option>
+<option value="W. Australia Standard Time">(UTC+08:00) Perth</option>
+<option value="Taipei Standard Time">(UTC+08:00) Taipei</option>
+<option value="Ulaanbaatar Standard Time">(UTC+08:00) Ulaanbaatar</option>
+<option value="Aus Central W. Standard Time">(UTC+08:45) Eucla</option>
+<option value="Transbaikal Standard Time">(UTC+09:00) Chita</option>
+<option value="Tokyo Standard Time">(UTC+09:00) Osaka, Sapporo, Tokyo</option>
+<option value="North Korea Standard Time">(UTC+09:00) Pyongyang</option>
+<option value="Korea Standard Time">(UTC+09:00) Seoul</option>
+<option value="Yakutsk Standard Time">(UTC+09:00) Yakutsk</option>
+<option value="Cen. Australia Standard Time">(UTC+09:30) Adelaide</option>
+<option value="AUS Central Standard Time">(UTC+09:30) Darwin</option>
+<option value="E. Australia Standard Time">(UTC+10:00) Brisbane</option>
+<option value="AUS Eastern Standard Time">(UTC+10:00) Canberra, Melbourne, Sydney</option>
+<option value="West Pacific Standard Time">(UTC+10:00) Guam, Port Moresby</option>
+<option value="Tasmania Standard Time">(UTC+10:00) Hobart</option>
+<option value="Vladivostok Standard Time">(UTC+10:00) Vladivostok</option>
+<option value="Lord Howe Standard Time">(UTC+10:30) Lord Howe Island</option>
+<option value="Bougainville Standard Time">(UTC+11:00) Bougainville Island</option>
+<option value="Russia Time Zone 10">(UTC+11:00) Chokurdakh</option>
+<option value="Magadan Standard Time">(UTC+11:00) Magadan</option>
+<option value="Norfolk Standard Time">(UTC+11:00) Norfolk Island</option>
+<option value="Sakhalin Standard Time">(UTC+11:00) Sakhalin</option>
+<option value="Central Pacific Standard Time">(UTC+11:00) Solomon Is., New Caledonia</option>
+<option value="Russia Time Zone 11">(UTC+12:00) Anadyr, Petropavlovsk-Kamchatsky</option>
+<option value="New Zealand Standard Time">(UTC+12:00) Auckland, Wellington</option>
+<option value="UTC+12">(UTC+12:00) Coordinated Universal Time+12</option>
+<option value="Fiji Standard Time">(UTC+12:00) Fiji</option>
+<option value="Kamchatka Standard Time">(UTC+12:00) Petropavlovsk-Kamchatsky - Old</option>
+<option value="Chatham Islands Standard Time">(UTC+12:45) Chatham Islands</option>
+<option value="UTC+13">(UTC+13:00) Coordinated Universal Time+13</option>
+<option value="Tonga Standard Time">(UTC+13:00) Nuku'alofa</option>
+<option value="Samoa Standard Time">(UTC+13:00) Samoa</option>
+<option value="Line Islands Standard Time">(UTC+14:00) Kiritimati Island</option>
+</select>
+            <span class="invalid-feedback field-validation-valid" data-valmsg-for="Timezone" data-valmsg-replace="false">Please fill out this field.</span>
+            <br>
+            <label data-i18n="form.fieldLabel.domainFrom">What domain are you sending from?</label>
+            <span data-i18n="form.requiredFieldSymbol">*</span>
+            <br>
+            <input type="text" class="form-control input-sm" maxlength="200" required="" data-val="true" data-val-length="The field DomainFrom must be a string with a maximum length of 200." data-val-length-max="200" data-val-required="The DomainFrom field is required." id="DomainFrom" name="DomainFrom" value="">
+            <span class="invalid-feedback field-validation-valid" data-valmsg-for="DomainFrom" data-valmsg-replace="false">Please fill out this field.</span>
+            <br>
+            <label data-i18n="form.fieldLabel.selfDescription">How would you describe your company or yourself?</label>
+            <span data-i18n="form.requiredFieldSymbol">*</span>
+            <br>
+            <select class="form-control input-sm" required="" data-val="true" data-val-required="The SelfDescription field is required." id="SelfDescription" name="SelfDescription">
+                <option selected="selected"></option>
+                <option data-i18n="form.selfDescription.isp" value="Internet Service Provider (ISP)">Internet Service Provider (ISP)</option>
+                <option data-i18n="form.selfDescription.esp" value="E-mail Service Provider (ESP)">E-mail Service Provider (ESP)</option>
+                <option data-i18n="form.selfDescription.hotmail" value="Windows Live Hotmail Customer">Windows Live Hotmail Customer</option>
+                <option data-i18n="form.selfDescription.notHotmail" value="Customer of an ISP other than Windows Live Hotmail">Customer of an ISP other than Windows Live Hotmail</option>
+                <option data-i18n="form.selfDescription.university" value="University IT">University IT</option>
+                <option data-i18n="form.selfDescription.business" value="Business (non-marketing)">Business (non-marketing)</option>
+                <option data-i18n="form.selfDescription.social" value="Social Networking">Social Networking</option>
+                <option data-i18n="form.selfDescription.other" value="Other">Other</option>
+            </select>
+            <span class="invalid-feedback field-validation-valid" data-valmsg-for="SelfDescription" data-valmsg-replace="false">Please fill out this field.</span>
+            <h6 data-i18n="form.header.ips">Please provide the following information</h6>
+            <hr>
+            <label data-i18n="form.fieldLabel.ips">Outbound IP(s) or range(s)</label>
+            <span data-i18n="form.requiredFieldSymbol">*</span>
+            <br>
+            <textarea rows="5" maxlength="1000" class="form-control input-sm" required="" data-val="true" data-val-length="The field IpAddresses must be a string with a maximum length of 1000." data-val-length-max="1000" data-val-regex="Please provide a valid IP address" data-val-regex-pattern="^(([0-9]|[1-9][0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5])\.){3}([0-9]|[1-9][0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5])((\/(3[0-2]|[1-2][0-9]|[0-9]))?)+(;(([0-9]|[1-9][0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5])\.){3}([0-9]|[1-9][0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5])((\/(3[0-2]|[1-2][0-9]|[0-9])))?)*;?$" data-val-required="The IpAddresses field is required." id="IpAddresses" name="IpAddresses"></textarea>
+            <span class="invalid-feedback field-validation-valid" data-valmsg-for="IpAddresses" data-valmsg-replace="false">Please fill out this field.</span>
+            <div class="text-danger">
+                <span class="field-validation-valid" data-valmsg-for="IpAddresses" data-valmsg-replace="true"></span>
+            </div>
+            <span class="multi-line" data-i18n="form.ipExample">Provide no more than 256 total IP addresses using any of the following formats:
+- Ranges should be entered in CIDR format:
+Example: xxx.xxx.xxx.xxx/24
+    - Use a semicolon to separate individual IPs or IP ranges:
+     Example: xxx.xxx.xxx.xxx/28;yyy.yyy.yyy.yyy
+    Example: xxx.xxx.xxx.xxx/28;yyy.yyy.yyy.yyy/28</span>
+            <br>
+            <br>
+            <label data-i18n="form.fieldLabel.serverType">Is your server dedicated or shared?</label>
+            <span data-i18n="form.requiredFieldSymbol">*</span>
+            <br>
+            <select class="form-control input-sm" required="" data-val="true" data-val-required="The ServerType field is required." id="ServerType" name="ServerType">
+                <option selected="selected"></option>
+                <option data-i18n="form.serverType.dedicated" value="Dedicated">Dedicated</option>
+                <option data-i18n="form.serverType.shared" value="Shared">Shared</option>
+                <option data-i18n="form.serverType.doNotKnow" value="Unknown">Do not know</option>
+            </select>
+            <span class="invalid-feedback field-validation-valid" data-valmsg-for="ServerType" data-valmsg-replace="false">Please fill out this field.</span>
+            <br>
+            <label data-i18n="form.fieldLabel.errorMessages">Copy and paste any error messages</label>
+            <span data-i18n="form.requiredFieldSymbol">*</span>
+            <br>
+            <textarea rows="5" maxlength="2000" class="form-control input-sm" required="" data-val="true" data-val-length="The field ErrorMessages must be a string with a maximum length of 2000." data-val-length-max="2000" data-val-required="The ErrorMessages field is required." id="ErrorMessages" name="ErrorMessages"></textarea>
+            <span class="invalid-feedback field-validation-valid" data-valmsg-for="ErrorMessages" data-valmsg-replace="false">Please fill out this field.</span>
+            <br>
+            <label data-i18n="form.fieldLabel.websiteUrl">Provide the URL of your website</label>
+            <span data-i18n="form.requiredFieldSymbol">*</span>
+            <br>
+            <textarea rows="5" maxlength="2000" class="form-control input-sm" required="" data-val="true" data-val-length="The field WebsiteUrl must be a string with a maximum length of 2000." data-val-length-max="2000" data-val-required="The WebsiteUrl field is required." id="WebsiteUrl" name="WebsiteUrl"></textarea>
+            <span class="invalid-feedback field-validation-valid" data-valmsg-for="WebsiteUrl" data-valmsg-replace="false">Please fill out this field.</span>
+            <input type="hidden" id="hdnLanguage" data-val="true" data-val-required="The ChosenLanguage field is required." name="ChosenLanguage" value="en_US">
+            <div class="form-group btnGroup">
+                <button type="submit" class="btn btn-primary" data-i18n="form.submitButton">Submit</button>
+            </div>
+        <input name="__RequestVerificationToken" type="hidden" value="CfDJ8ASnDG0xO51Ng_OPvIMYW1W1wYD5ebXsZqsbOtMznVLqVPJRAF7sXv_yt4eU4njN53f4JSQsFlMehSQCPvv2kL98DYaWLI5b0B5Ihc1J_863FZ0iPCTmgzTb6R0e3No7bK-f5bX36oqkZRTayGjmokX097qGINBNVBSl6onLDrZXVEpJ8-0N2EFUUnWpz_Ot_w"></form>
+    </div>
+</div>
+
+
+        </main>
+    </div>
+    <footer class="border-top footer text-muted">
+        <div class="container">
+            <select class="switch-locale form-control input-sm" id="ddlLanguage">
+                <option value="cs_CZ">čeština (Česko)</option>
+                <option value="da_DK">dansk (Danmark)</option>
+                <option value="de_DE">Deutsch (Deutschland)</option>
+                <option value="de_AT">Deutsch (Österreich)</option>
+                <option value="de_CH">Deutsch (Schweiz)</option>
+                <option value="et_EE">eesti (Eesti)</option>
+                <option value="en_AU">English (Australia)</option>
+                <option value="en_CA">English (Canada)</option>
+                <option value="en_HK">English (Hong Kong SAR)</option>
+                <option value="en_IN">English (India)</option>
+                <option value="en_IE">English (Ireland)</option>
+                <option value="en_MY">English (Malaysia)</option>
+                <option value="en_NZ">English (New Zealand)</option>
+                <option value="en_PH">English (Philippines)</option>
+                <option value="en_SG">English (Singapore)</option>
+                <option value="en_ZA">English (South Africa)</option>
+                <option value="en_GB">English (United Kingdom)</option>
+                <option value="en_US">English (United States)</option>
+                <option value="es_AR">español (Argentina)</option>
+                <option value="es_BO">español (Bolivia)</option>
+                <option value="es_CL">español (Chile)</option>
+                <option value="es_CO">español (Colombia)</option>
+                <option value="es_CR">español (Costa Rica)</option>
+                <option value="es_EC">español (Ecuador)</option>
+                <option value="es_SV">español (El Salvador)</option>
+                <option value="es_ES">español (España, alfabetización internacional)</option>
+                <option value="es_US">español (Estados Unidos)</option>
+                <option value="es_GT">español (Guatemala)</option>
+                <option value="es_MX">español (México)</option>
+                <option value="es_PA">español (Panamá)</option>
+                <option value="es_PY">español (Paraguay)</option>
+                <option value="es_PE">español (Perú)</option>
+                <option value="es_PR">español (Puerto Rico)</option>
+                <option value="es_DO">español (República Dominicana)</option>
+                <option value="es_UY">español (Uruguay)</option>
+                <option value="es_VE">español (Venezuela)</option>
+                <option value="fr_DZ">français (Algérie)</option>
+                <option value="fr_BE">français (Belgique)</option>
+                <option value="fr_CA">français (Canada)</option>
+                <option value="fr_FR">français (France)</option>
+                <option value="fr_LU">français (Luxembourg)</option>
+                <option value="fr_MA">français (Maroc)</option>
+                <option value="fr_CH">français (Suisse)</option>
+                <option value="fr_TN">français (Tunisie)</option>
+                <option value="hr_BA">hrvatski (Bosna i Hercegovina)</option>
+                <option value="hr_HR">hrvatski (Hrvatska)</option>
+                <option value="id_ID">Indonesia (Indonesia)</option>
+                <option value="it_IT">italiano (Italia)</option>
+                <option value="lv_LV">latviešu (Latvija)</option>
+                <option value="lt_LT">lietuvių (Lietuva)</option>
+                <option value="hu_HU">magyar (Magyarország)</option>
+                <option value="nl_BE">Nederlands (België)</option>
+                <option value="nl_NL">Nederlands (Nederland)</option>
+                <option value="nb_NO">norsk bokmål (Norge)</option>
+                <option value="pl_PL">polski (Polska)</option>
+                <option value="pt_BR">português (Brasil)</option>
+                <option value="pt_PT">português (Portugal)</option>
+                <option value="ro_RO">română (România)</option>
+                <option value="sk_SK">slovenčina (Slovensko)</option>
+                <option value="sl_SI">slovenščina (Slovenija)</option>
+                <option value="sr_Latn_RS">srpski (Srbija)</option>
+                <option value="fi_FI">suomi (Suomi)</option>
+                <option value="sv_SE">svenska (Sverige)</option>
+                <option value="vi_VN">Tiếng Việt (Việt Nam)</option>
+                <option value="tr_TR">Türkçe (Türkiye)</option>
+                <option value="el_GR">Ελληνικά (Ελλάδα)</option>
+                <option value="bg_BG">български (България)</option>
+                <option value="ru_KZ">русский (Казахстан)</option>
+                <option value="ru_RU">русский (Россия)</option>
+                <option value="uk_UA">українська (Україна)</option>
+                <option value="he_IL">עברית (ישראל)</option>
+                <option value="ar_AE">العربية (الإمارات العربية المتحدة)</option>
+                <option value="ar_SA">العربية (المملكة العربية السعودية)</option>
+                <option value="ar_EG">العربية (مصر)</option>
+                <option value="th_TH">ไทย (ไทย)</option>
+                <option value="ko_KR">한국어(대한민국)</option>
+                <option value="zh_CN">中文(中国)</option>
+                <option value="zh_TW">中文(台灣)</option>
+                <option value="zh_HK">中文(香港特別行政區)</option>
+                <option value="ja_JP">日本語 (日本)</option>
+            </select>
+            <a target="_blank" class="link-dark footer-link" data-i18n="[href]footer.termsOfUseLink;footer.termsOfUse" href="https://go.microsoft.com/fwlink/?LinkID=206977">Terms of use</a>
+            <span>|</span>
+            <a target="_blank" class="link-dark footer-link" data-i18n="[href]footer.privacyLink;footer.privacy" href="https://go.microsoft.com/fwlink/?LinkID=521839">Privacy</a>
+            <span>|</span>
+            <span>© </span>
+            <span data-i18n="footer.copyright">Microsoft</span>
+            <span>2022</span>
+        </div>
+    </footer>
+
+    <script src="/lib/jquery/dist/jquery.min.js"></script>
+    <script src="/lib/i18next/i18next.min.js"></script>
+    <script src="/lib/jquery-i18next/jquery-i18next.min.js"></script>
+    <script src="/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/lib/jquery-validation/dist/jquery.validate.min.js"></script>
+    <script src="/js/site.js?v=4q1jwFhaPaZgr8WAUSrux6hAuh0XDg9kPS3xIVq36I0"></script>
+    <script src="/js/site.i18n.js?v=enPoE0A2VTFk_9k7acLRDQZMZreWG5EQGPGv9Ul1A-Y"></script>
+    
+    <script type="text/javascript">
+        $(document).ready(function () {
+            (function () {
+                'use strict'
+
+                // Fetch all the forms we want to apply custom Bootstrap validation styles to
+                var forms = document.querySelectorAll('.needs-validation');
+
+                // Loop over them and prevent submission
+                Array.prototype.slice.call(forms)
+                    .forEach(function (form) {
+                        form.addEventListener('submit', function (event) {
+                            if (!form.checkValidity()) {
+                                event.preventDefault();
+                                event.stopPropagation();
+                            }
+
+                            form.classList.add('was-validated');
+                        }, false);
+                    });
+
+                $("[type='submit']").click(function () {
+                    onSubmissionEvent();
+                });
+            })();
+        });
+
+        function onSubmissionEvent() {
+            $(".main-container").addClass("d-none");
+            $(".progress-indicator").removeClass("d-none");
+        }
+
+        function postSuccessfulSubmitEvent() {
+            $("[name='IssueTitle']").val("");
+            $("[name='IpAddresses']").val("");
+        }
+    </script>
+
+
+
+</body></html>
